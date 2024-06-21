@@ -15,7 +15,7 @@ module.exports = {
     // Client will be the bot that you will use for the main purpose of the website and commands.
     client: {
         id: '1253486883166621748', // Bot ID
-        token: 'MTI1MzQ4Njg4MzE2NjYyMTc0OA.GLm9dy.tal8NZiqHSOxYD-Zs2YeJB2I7gGnoQQNbxzXdU', // Bot token
+        token: process.env.CLIENT_TOKEN, // Bot token
         secret: '1JTVAxkOm5S6JUuvpNoXCsunYJPZhM7T', // Bot secret
         prefix: 'a!', // Bot prefix
         owners: ["664171400193638401", "738684490787979304"], // Bot owner(s) ID, can be multiple owners separated by comma 
@@ -26,7 +26,7 @@ module.exports = {
     serverClient: {
         id: '1253488617876226152', // Server Bot ID
         prefix: 's!', // Server Bot prefix
-        token: 'MTI1MzQ4Njg4MzE2NjYyMTc0OA.GLm9dy.tal8NZiqHSOxYD-Zs2YeJB2I7gGnoQQNbxzXdU', // Server Bot token
+        token: process.env.CLIENT_TOKEN, // Server Bot token
 
         // Replace the REPLACEME with your client ID
         invite: 'https://discord.com/oauth2/authorize?client_id=1253488617876226152&scope=bot%20identify&permissions=19473'
